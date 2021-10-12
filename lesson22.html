@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <title>VueJs Instance</title>
+      <script type = "text/javascript" src = "js/vue.js"></script>
+   </head>
+   <body>
+      <div id = "component_test">
+         <testcomponent></testcomponent>
+      </div>
+      <script type = "text/javascript">
+         Vue.component('testcomponent',{
+            template : '<h1>Hello World</h1>',
+            data: function() {
+            },
+            methods:{
+            }
+         });
+         var vm = new Vue({
+            el: '#component_test'
+         });
+      </script>
+   </body>
+</html>
